@@ -59,7 +59,9 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <span className="text-xl font-bold text-navy-800">Lakshmi Durga</span>
+            <span className="text-xl font-extrabold bg-gradient-to-r from-navy-800 via-blue-600 to-emerald-600 bg-clip-text text-transparent tracking-wide">
+              Lakshmi Durga
+            </span>
           </div>
           
           {/* Desktop Navigation */}

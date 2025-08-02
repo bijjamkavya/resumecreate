@@ -6,7 +6,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <h3 className="text-xl font-bold mb-2">Lakshmi Durga Tirumani</h3>
+            <h3 className="text-xl font-extrabold mb-2 bg-gradient-to-r from-emerald-400 via-cyan-300 to-blue-300 bg-clip-text text-transparent tracking-wide">
+              Lakshmi Durga Tirumani
+            </h3>
             <p className="text-blue-200">Full Stack Web Developer</p>
           </div>
           

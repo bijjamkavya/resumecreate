@@ -1,4 +1,5 @@
-import { ArrowRight, Download, Linkedin, Mail, Phone, User } from "lucide-react";
+import { ArrowRight, Download, Linkedin, Mail, Phone } from "lucide-react";
+import profileImage from "@assets/lucky 22_1754117919618.jpg";
 
 export default function Hero() {
   const handleViewWork = () => {
@@ -22,7 +23,7 @@ export default function Hero() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                Hi, I'm <span className="text-emerald-400">Lakshmi Durga</span>
+                Hi, I'm <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent font-extrabold tracking-wide">Lakshmi Durga</span>
               </h1>
               <h2 className="text-xl lg:text-2xl text-blue-100 font-medium">
                 Full Stack Web Developer
@@ -75,13 +76,18 @@ export default function Hero() {
           
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-72 h-72 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-blue-400 to-emerald-400 p-1">
-                <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                  <User className="text-6xl lg:text-8xl text-gray-400" size={128} />
+              <div className="w-72 h-72 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-blue-400 to-emerald-400 p-1 shadow-2xl">
+                <div className="w-full h-full rounded-full overflow-hidden bg-white">
+                  <img 
+                    src={profileImage} 
+                    alt="Lakshmi Durga Tirumani - Full Stack Developer" 
+                    className="w-full h-full object-cover object-center"
+                  />
                 </div>
               </div>
-              <div className="absolute -top-4 -right-4 w-16 h-16 bg-emerald-400 rounded-full opacity-20"></div>
-              <div className="absolute -bottom-6 -left-6 w-20 h-20 bg-orange-400 rounded-full opacity-20"></div>
+              <div className="absolute -top-4 -right-4 w-16 h-16 bg-emerald-400 rounded-full opacity-20 animate-pulse"></div>
+              <div className="absolute -bottom-6 -left-6 w-20 h-20 bg-orange-400 rounded-full opacity-20 animate-pulse delay-1000"></div>
+              <div className="absolute top-1/2 -left-8 w-12 h-12 bg-cyan-400 rounded-full opacity-15 animate-pulse delay-500"></div>
             </div>
           </div>
         </div>
